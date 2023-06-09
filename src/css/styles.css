@@ -1,25 +1,34 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./gallery.css');
+@import url('./services.css');
+@import url('./team.css');
+@import url('./contacts.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+:root{
+	--main-background-color:#FFFFFF;
+	--form-background-color:#E5E5E5;
+	--light-font-color:#FFFCFC;
+	--dark-color:#000000;
+	--overlay-color:rgba(163, 83, 10, 0.7);
+	--form-font-color:rgba(0, 0, 0, 0.5);
+	--overlay-transform:matrix(1, 0, 0, 1, 0, 0);
+	--main-font-family:'Rosario';
+	--main-font-weight: 700;
+	--secondary-font-weight:600;
+	--line-height:1.22;
+	--header-font-size:36px;
+	--section-title-font-size:96px;
+	--secondary-title-font-size:64px;
+	--form-font-size:36px;
+	--contacts-font-size:30px;
+	--contacts-hours-font-size:36px;
 }
+body{
+	font-family: var(--main-font-family);
+	font-weight: var(--main-font-weight);
+	line-height: var(--line-height);
+}
+
